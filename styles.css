@@ -1,0 +1,230 @@
+body {
+    background-color: #242424;
+    margin: 0px; /* https://stackoverflow.com/a/21358662 */
+    padding: 0px;
+}
+/*testcomment*/
+header {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1; /* apparently thls stops the arrows of the summaty from overlapping with the header 
+    (https://stackoverflow.com/a/5573029)*/
+}
+
+.myheaderContents {
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.CoverboxLogo {
+    display: block;
+    opacity: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 88%;
+    padding-top: 2px;
+    font-size: 0.8em;
+}
+
+/* https://blog.hubspot.com/website/remove-underline-from-links-css*/
+.CoverboxLogo:link{
+    text-decoration: none;
+}
+.CoverboxLogo:visited {
+    text-decoration: none; 
+}
+
+.CoverboxLogo:active { 
+    text-decoration: none; 
+    
+}
+
+.CoverboxLogo:hover {
+    opacity: 90%;
+    transition: 1s;
+}
+
+.pizzahutLogoImg {
+    height: 70px;
+    width: 70px;
+    padding-top: 10px;
+}
+
+.titleAndButton{
+    text-align: center;
+}
+.gobackButton{
+    display: inline-block;
+    border: 0px;
+    background-color: #242424;
+    margin-right: 0.2em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 0px;
+
+}
+.MenuTitle{
+    display: inline-block;
+    color: #ffffff;
+    font: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+}
+
+.smalltextUnderTitle{
+    margin-top: 0px;
+    color: #6d6d6d;
+    margin-top: 0px;
+}
+
+.findButton{
+    background-color: #242424;
+    color: #ffffff;
+    font: 1em sans-serif;
+    padding: 5px;
+    width: 7em;
+    border-color: #ffffff;
+    border-radius: 15px;
+    border-width: 1px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+summary {
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #32373a;
+    color: #ffffff;
+    height: 60px;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 60px;
+    padding-left: 20px;
+}
+
+/* https://stackoverflow.com/a/69722686 */
+
+summary::after {
+    display: inline-block;
+    position: absolute;
+    right: 25%;
+    transition: 0.2s;
+    margin-left: 2em;
+    content: '\203A' ; /* chevron */
+    transform: rotate(90deg);
+
+  }
+
+details[open] summary::after {
+    transform: rotate(90deg);
+  }
+
+
+.foodImages {
+    display: block;
+    width: 61.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 250px;
+}
+
+table{
+    background-color:#242424;
+    margin-left: 20%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 61.5%;
+}
+
+.itemName{
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    vertical-align: bottom;
+    height: 1.1em;
+}
+
+.ingredients{
+    color: #bfc0c0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+}
+
+.sizePrice{
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    cursor: pointer;
+}
+
+.largeRow{
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    height: 5em;
+    vertical-align:middle;
+    cursor: pointer;
+}
+
+.AddOnName{
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.AddOnPrice{
+    color: #ffffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.OnlyOneItem{
+    width: 30.75%;
+}
+
+footer{
+    color: #ffffff;
+    border-top: #ffffff;
+    border-top-style: solid;
+    margin-top: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+    border-top-width: 1px;
+    text-align: center;
+    color:#ffffff;
+}
+
+.terms{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.terms:hover {
+    color: #710e38;
+}
+
+.TheEnd{
+    display: inline;
+    margin-top: 0.1em;
+}
+
